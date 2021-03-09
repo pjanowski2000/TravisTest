@@ -7,7 +7,7 @@ describe('get endpoint', () => {
       .get('/')
       
 
-    expect(res.body.mes).toEqual('It works')
+    expect(res.body.data).toEqual('It works')
   })
 })
 
@@ -17,7 +17,7 @@ describe('post endpoint', () => {
         .post('/')
         
 
-      expect(res.body.mes).toEqual('POST')
+      expect(res.body.data).toEqual('POST')
     })
   })
 
@@ -27,7 +27,7 @@ describe('post endpoint', () => {
         .put('/')
         
  
-      expect(res.body.mes).toEqual('PUT')
+      expect(res.body.data).toEqual('PUT')
     })
   })
   describe('delete endpoint', () => {
@@ -36,6 +36,6 @@ describe('post endpoint', () => {
         .delete('/')
         
 
-      expect(res.body.mes).toEqual('DELETE')
+      expect(res.body.data).toEqual('DELETE')
     })
   })
