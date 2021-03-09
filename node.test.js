@@ -1,5 +1,5 @@
 const request = require('supertest')
-const app = require('../index.js')
+const app = require('./index.js')
 
 describe('get endpoint', () => {
   it('should return get', async () => {
@@ -22,7 +22,7 @@ describe('post endpoint', () => {
   })
 
   describe('put endpoint', () => {
-    it('should return patch', async () => {
+    it('should return put', async () => {
       const res = await request(app)
         .put('/')
         
@@ -31,7 +31,7 @@ describe('post endpoint', () => {
     })
   })
   describe('delete endpoint', () => {
-    it('should return patch', async () => {
+    it('should return delete', async () => {
       const res = await request(app)
         .delete('/')
         
