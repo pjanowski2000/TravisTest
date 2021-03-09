@@ -3,19 +3,19 @@ const app = express()
 const port = 8080
 
 app.get('/', (req, res) => {
-  res.send('Hello !')
+  res.send({data:'It works'})
 })
 
 app.post('/', (req, res) => {
-    res.send('POST')
+    res.send({data:'POST'})
 })
 
 app.put('/', (req, res) => {
-    res.send('PUT')
+    res.send({data:'PUT'})
 })
 
 app.delete('/', (req, res) => {
-    res.send('DELETE')
+    res.send({data:'DELETE'})
 })
 
 app.listen(port, () => {
